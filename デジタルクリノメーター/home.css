@@ -1,0 +1,59 @@
+body{
+    font-family: 'Comic Sans MS',sans-serif;
+}
+#top{
+    text-align: center;
+}
+/*オープニングテロップ*/
+#telop{
+    animation-name: floatIn;
+    animation-duration: 2s;
+    animation-delay: 0.5s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+    position: relative;
+    top: 200px;
+    opacity: 0;
+    font-size: 50px;
+}
+@keyframes floatIn{
+    0%{
+        opacity: 0;
+        top: 300px;
+    }
+    100%{
+        opacity: 1;
+        top: 150px;
+    }
+}
+/*スタートボタン*/
+#start_btn{
+    font-family: 'Comic Sans MS',sans-serif;
+    animation-name: fadeIn;
+    animation-duration: 2s;
+    animation-delay: 2s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+    position: relative;
+    top: 150px;
+    opacity: 0;
+    width: 150px;
+    height: 60px;
+    font-size: 30px;
+    transition: 0.5s;
+}
+#start_btn:hover{
+    cursor: pointer;
+    width: 200px;
+}
+@keyframes fadeIn{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+#main{
+    display: none;
+}
